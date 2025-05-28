@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
     username:{
         type:String,
-        required,
-        unique,
+        required: true,
+        unique: true,
     },
     password:{
         type:String,
-        required,
+        required: true,
     },
     isMfaActive: {
         type: Boolean,
